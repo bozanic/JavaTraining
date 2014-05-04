@@ -24,12 +24,25 @@ public class FotoApparat {
 	}
 	
 	
+	public FotoApparat(int megaPixel, double displayGroesse,
+			boolean bildStabilisiert, String marke, String herstellungsland,
+			int brennweiteMax, int brennweiteMin) {
+		super();
+		this.megaPixel = megaPixel;
+		this.displayGroesse = displayGroesse;
+		this.bildStabilisiert = bildStabilisiert;
+		this.marke = marke;
+		this.herstellungsland = herstellungsland;
+		this.setBrennweiten(brennweiteMin, brennweiteMax);
+	}
+
+
 	//Objektmethoden
 	public void machFoto(){
 		System.out.println("Klick");
 	}
 
-
+	//Getter und Setter
 	public int getMegaPixel() {
 		return megaPixel;
 	}
